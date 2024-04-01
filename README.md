@@ -50,7 +50,12 @@ STEP:11  On the board, by giving required input, the LEDs starts to glow light, 
 
 VERILOG CODE
 
-   <<< TYPE YOUR VERILOG CODE >>>
+#1
+DECODER3to8:
+
+Code:
+
+
 
 OUTPUT WAVEFORM:
 Simulation:
@@ -58,6 +63,24 @@ Simulation:
 
 Elaborated Design:
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/a6ab2587-f080-4337-8744-a3ce5a48083d)
+
+
+#2
+DEMULTIPLEXER 1to8:-
+
+Code:
+
+
+
+OUTPUT:-
+Simulation:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/6f259c21-c152-489b-8f03-b319a667cc74)
+
+Elaborated Design:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/5e679288-7f30-4cc1-89ab-cf8f9100d6ef)
+
+#3
+Encoder_8to3:
 
 
 
