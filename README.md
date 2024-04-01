@@ -52,8 +52,14 @@ VERILOG CODE
 
    <<< TYPE YOUR VERILOG CODE >>>
 
-OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
+OUTPUT WAVEFORM:
+Simulation:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/55e67f15-028f-47ab-81f1-64eb42a874ad)
+
+Elaborated Design:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/a6ab2587-f080-4337-8744-a3ce5a48083d)
+
+
 
 RESULT
 
