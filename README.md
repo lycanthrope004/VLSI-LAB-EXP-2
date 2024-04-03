@@ -77,7 +77,7 @@ DEMULTIPLEXER 1to8:-
 Code:
 ~~~
 
-~~`
+~~~
 
 OUTPUT:-
 
@@ -157,8 +157,8 @@ Elaborated Design:
 #5
 MULTIPLEXER_8to1:-
 Code:
-```
-```
+~~~
+~~~
 OUTPUT:-
 Simulation:
 
