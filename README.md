@@ -47,43 +47,124 @@ STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in th
 STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 VERILOG CODE
 
 #1
-DECODER3to8:
+DECODER3to8:-
 
 Code:
+~~~
+
+~~~
 
 
 
 OUTPUT WAVEFORM:
+
 Simulation:
+
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/55e67f15-028f-47ab-81f1-64eb42a874ad)
 
 Elaborated Design:
+
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/a6ab2587-f080-4337-8744-a3ce5a48083d)
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #2
 DEMULTIPLEXER 1to8:-
 
 Code:
+~~~
 
-
+~~`
 
 OUTPUT:-
+
 Simulation:
+
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/6f259c21-c152-489b-8f03-b319a667cc74)
 
 Elaborated Design:
+
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/5e679288-7f30-4cc1-89ab-cf8f9100d6ef)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #3
-Encoder_8to3:
+Encoder_8to3:-
+Code:
+~~~
+module encoder_8_to_3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+or g1(a0,d1,d3,d5,d7);
+or g2(a1,d2,d3,d6,d7);
+or g3(a2,d4,d5,d6,d7);
+endmodule
+
+~~~
+
+OUTPUT:-
+
+Simulation:
+
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/568bd01a-8eea-45a2-b033-4b433f67f883)
+
+Elaborated Design:
+
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/b3745ffe-493a-44c5-9f74-8a99f2c32b28)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#4
+MAGNITUDE_COMPARATOR:-
+Code:
+~~~
+module comparator(a,b,eq,lt,gt);
+input [3:0] a,b;
+output reg eq,lt,gt;
+always @(a,b)
+begin
+ if (a==b)
+ begin
+  eq = 1'b1;
+  lt = 1'b0;
+  gt = 1'b0;
+ end
+ else if (a>b)
+begin
+  eq = 1'b0;
+  lt = 1'b0;
+  gt = 1'b1;
+ end
+ else
+ begin
+  eq = 1'b0;
+  lt = 1'b1;
+  gt = 1'b0;
+ end
+end 
+endmodule
+~~~
+
+OUTPUT:-
+
+Simulation:
+
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/8c173599-802a-4297-ad2d-ab1c5b537f77)
+
+Elaborated Design:
+
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/3ed0152f-6e86-4c81-adb5-3deb95aa9451)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#5
+MULTIPLEXER_8to1:-
+Code:
+```
+```
+OUTPUT:-
+Simulation:
 
 
+Elaborated Design:
 
-RESULT
+RESULT:
 
 
