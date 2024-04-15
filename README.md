@@ -55,7 +55,23 @@ DECODER3to8:-
 
 Code:
 ~~~
-
+module decoder_struct(  
+  input [2:0] a,    
+  output [7:0] d    
+   );
+wire x,y,z;
+not g1(z,a[0]);
+not g2(y,a[1]);
+not g3(x,a[2]);
+and g4(d[0],x,y,z);
+and g5(d[1],x,y,a[0]);
+and g6(d[2],x,a[1],z);
+and g7(d[3],x,a[1],a[0]);
+and g8(d[4],a[2],y,z);
+and g9(d[5],a[2],y,a[0]);
+and g10(d[6],a[2],a[1],z);
+and g11(d[7],a[2],a[1],a[0]);
+endmodule
 ~~~
 
 
@@ -76,7 +92,26 @@ DEMULTIPLEXER 1to8:-
 
 Code:
 ~~~
+module demux_1_8(y,s,a);
+output reg [7:0]y;
+input [2:0]s;
+input a;
 
+always @(*)
+begin 
+y=0;
+case(s)
+3'd0: y[0]=a;
+3'd1: y[1]=a;
+3'd2: y[2]=a;
+3'd3: y[3]=a;
+3'd4: y[4]=a;
+3'd5: y[5]=a;
+3'd6: y[6]=a;
+3'd7: y[7]=a;
+endcase
+end
+endmodule
 ~~~
 
 OUTPUT:-
@@ -158,6 +193,25 @@ Elaborated Design:
 MULTIPLEXER_8to1:-
 Code:
 ~~~
+module mux_8tol (in, sel, out);
+    input [7:0] in;
+    input [2:0] sel;
+    output reg out;
+    always @(*)
+       begin
+          case (sel)
+              3'b000: out = in [0];
+              3'b001: out = in [1];
+              3'b010: out = in [2];
+              3'b011: out = in [3];
+              3'b100: out = in [4];
+              3'b101: out = in [5];
+              3'b110: out = in [6];
+              3'b111: out = in [7];
+              default: out = 1'bx;
+          endcase
+       end
+endmodule
 ~~~
 OUTPUT:-
 Simulation:
