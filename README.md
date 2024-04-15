@@ -216,9 +216,13 @@ endmodule
 ~~~
 OUTPUT:-
 Simulation:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/d8d9bddb-adde-45cb-8046-d12d8886f7a0)
+
 
 
 Elaborated Design:
+![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/e76f843c-3d83-4e20-8ea7-b887494303d2)
+
 
 RESULT:
 
