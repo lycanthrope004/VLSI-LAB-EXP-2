@@ -1,7 +1,7 @@
 # SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
 
 **AIM:** 
- To simulate and synthesis Logic Gates,Adders and Subtractor using Vivadoo Software
+ To simulate and synthesis Logic Gates,Adders and Subtractor using Vivado Software
  
 **APPARATUS REQUIRED :**  Vivado™ ML 2023.2
 
@@ -232,6 +232,6 @@ Elaborated Design:
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/e76f843c-3d83-4e20-8ea7-b887494303d2)
 
 
-**RESULT :**  The Simulation and Synthesis Logic Gates,Adders and Subtractor is successfully verified using Vivadoo Software .
+**RESULT :**  The Simulation and Synthesis Logic Gates,Adders and Subtractor is successfully verified using Vivado Software .
 
 
