@@ -80,7 +80,7 @@ endmodule
 
 
 
-OUTPUT WAVEFORM:
+OUTPUT:-
 
 Simulation:
 
@@ -129,6 +129,7 @@ Elaborated Design:
 
 #3
 ENCODER_8to3:-
+
 Code:
 ~~~
 module encoder_8_to_3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
@@ -153,6 +154,7 @@ Elaborated Design:
 
 #4
 MAGNITUDE_COMPARATOR:-
+
 Code:
 ~~~
 module comparator(a,b,eq,lt,gt);
@@ -228,6 +230,6 @@ Elaborated Design:
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/e76f843c-3d83-4e20-8ea7-b887494303d2)
 
 
-RESULT: The simulation and synthesis Logic Gates,Adders and Subtractor successfully verified using Vivadoo Software .
+**RESULT :** The simulation and synthesis Logic Gates,Adders and Subtractor successfully verified using Vivadoo Software .
 
 
