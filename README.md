@@ -2,6 +2,7 @@ SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
 
 **AIM:** 
  To simulate and synthesis Logic Gates,Adders and Subtractor using Vivadoo Software
+ 
 **APPARATUS REQUIRED :**  Vivado™ ML 2023.2
 
 **LOGIC DIAGRAM**
