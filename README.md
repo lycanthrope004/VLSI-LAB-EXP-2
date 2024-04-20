@@ -1,11 +1,8 @@
 SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
 
-AIM: 
- To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Xilinx ISE.
-
-APPARATUS REQUIRED:
-Xilinx 14.7
-Spartan6 FPGA
+**AIM:** 
+ To simulate and synthesis Logic Gates,Adders and Subtractor using Vivadoo Software
+**APPARATUS REQUIRED :**  Vivado™ ML 2023.2
 
 **LOGIC DIAGRAM**
 
@@ -36,22 +33,28 @@ MAGNITUDE COMPARATOR
 
   
 PROCEDURE:
-STEP:1  Start  the Xilinx navigator, Select and Name the New project.
-STEP:2  Select the device family, device, package and speed.       
-STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
-STEP:4  Type the File Name and Click Next and then finish button. Type the code and save it.
-STEP:5  Select the Behavioral Simulation in the Source Window and click the check syntax.                       
-STEP:6  Click the simulation to simulate the program and  give the inputs and verify the outputs as per the truth table.               
-STEP:7  Select the Implementation in the Sources Window and select the required file in the Processes Window.
-STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in the  FloorplanArea/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. 
-STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
-STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
-STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-VERILOG CODE
+1. Open Vivado: Launch Xilinx Vivado software on your computer.
+
+2. Create a New Project: Click on "Create Project" from the welcome page or navigate through "File" > "Project" > "New".
+
+3. Project Settings: Follow the prompts to set up your project. Specify the project name, location, and select RTL project type.
+
+4. Add Design Files: Add your Verilog design files to the project. You can do this by right-clicking on "Design Sources" in the Sources window, then selecting "Add Sources". Choose your Verilog files from the file browser.
+
+5. Specify Simulation Settings: Go to "Simulation" > "Simulation Settings". Choose your simulation language (Verilog in this case) and simulation tool (Vivado Simulator).
+
+6. Run Simulation: Go to "Flow" > "Run Simulation" > "Run Behavioral Simulation". This will launch the Vivado Simulator and compile your design for simulation.
+
+7. Set Simulation Time: In the Vivado Simulator window, set the simulation time if it's not set automatically. This determines how long the simulation will run.
+
+8. Run Simulation: Start the simulation by clicking on the "Run" button in the simulation window.
+
+9. View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
+
+**EXPERIMENTS**
 
 #1
-DECODER3to8:-
+DECODER_3TO8:-
 
 Code:
 ~~~
@@ -86,9 +89,8 @@ Elaborated Design:
 
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/a6ab2587-f080-4337-8744-a3ce5a48083d)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #2
-DEMULTIPLEXER 1to8:-
+DEMULTIPLEXER_1TO8:-
 
 Code:
 ~~~
@@ -123,9 +125,9 @@ Simulation:
 Elaborated Design:
 
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/5e679288-7f30-4cc1-89ab-cf8f9100d6ef)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #3
-Encoder_8to3:-
+ENCODER_8to3:-
 Code:
 ~~~
 module encoder_8_to_3(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
@@ -148,7 +150,6 @@ Elaborated Design:
 
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/b3745ffe-493a-44c5-9f74-8a99f2c32b28)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #4
 MAGNITUDE_COMPARATOR:-
 Code:
@@ -189,9 +190,10 @@ Simulation:
 Elaborated Design:
 
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/3ed0152f-6e86-4c81-adb5-3deb95aa9451)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #5
-MULTIPLEXER_8to1:-
+MULTIPLEXER_8TO1:-
+
 Code:
 ~~~
 module mux_8tol (in, sel, out);
@@ -215,6 +217,7 @@ module mux_8tol (in, sel, out);
 endmodule
 ~~~
 OUTPUT:-
+
 Simulation:
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/d8d9bddb-adde-45cb-8046-d12d8886f7a0)
 
@@ -224,6 +227,6 @@ Elaborated Design:
 ![image](https://github.com/lycanthrope004/VLSI-LAB-EXP-2/assets/121667830/e76f843c-3d83-4e20-8ea7-b887494303d2)
 
 
-RESULT:
+RESULT: The simulation and synthesis Logic Gates,Adders and Subtractor successfully verified using Vivadoo Software .
 
 
